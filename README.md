@@ -19,10 +19,10 @@ git clone https://github.com/guivictorr/check-temperature.git
 cd check-temperature
 
 ## 3. Instalar as dependências
-yarn || npm install
+npm install
 
 ## 4. Rodar a aplicação
-yarn start || npm run start
+npm run start
 
 ## Opcional. Se você quiser pode instalar globalmente
 cd chack-temperature && sudo npm intall -g
@@ -43,5 +43,3 @@ Depois que o merge da sua pull request for feito, você pode deletar a sua branc
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/guivictorr/pet-finder/blob/master/LICENSE) para mais detalhes.
-
-'+
