@@ -1,5 +1,7 @@
 const puppeteer = require('puppeteer');
 const prompt = require('prompt-sync')();
+const chalk = require('chalk');
+const { log } = console;
 
 function getCity() {
   const city = prompt('Cidade: ');
@@ -34,8 +36,13 @@ async function getTemp(page) {
     };
   });
 
-  console.log(`Temperatura atual: ${data.temp}ºC`);
-  console.log(`Min: ${data.minTemp}ºC Max: ${data.maxTemp}ºC`);
+  const currentTemp = `${chalk.yellow(`Temp: ${data.temp}ºC`)}`;
+  const minTemp = `${chalk.blue(`Min: ${data.minTemp}ºC`)}`;
+  const maxTemp = `${chalk.red(`Max: ${data.maxTemp}ºC`)}`;
+
+  log(currentTemp);
+  log(minTemp);
+  log(maxTemp);
 }
 
 async function run() {

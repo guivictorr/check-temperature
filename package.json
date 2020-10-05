@@ -5,9 +5,10 @@
   "author": "Guilherme",
   "license": "MIT",
   "scripts": {
-    "check": "clear && node src/index.js"
+    "start": "clear && node src/index.js"
   },
   "dependencies": {
+    "chalk": "^4.1.0",
     "prompt-sync": "^4.2.0",
     "puppeteer": "^5.3.1"
   }
