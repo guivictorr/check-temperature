@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const puppeteer = require('puppeteer');
 const prompt = require('prompt-sync')();
 const chalk = require('chalk');
